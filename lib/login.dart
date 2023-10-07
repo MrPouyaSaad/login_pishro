@@ -32,7 +32,15 @@ class LoginScreen extends StatelessWidget {
               color: Colors.white,
             ),
             const SizedBox(
-              height: 64,
+              height: 32,
+            ),
+            const Text(
+              'لطفا نام کاربری و رمز عبور خود را وارد کنید',
+              style:
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(
+              height: 32,
             ),
             const MyTextField(
               icon: Icon(Icons.person),
