@@ -35,8 +35,8 @@ class _WrongPassState extends State<WrongPass> {
             aspectRatio: _controller.value.aspectRatio,
             child: ClipRRect(
               borderRadius: const BorderRadius.only(
-                bottomLeft: Radius.circular(180),
-                bottomRight: Radius.circular(180),
+                bottomLeft: Radius.circular(88),
+                bottomRight: Radius.circular(88),
               ),
               child: VideoPlayer(_controller),
             ),
@@ -47,16 +47,17 @@ class _WrongPassState extends State<WrongPass> {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 const Text(
-                  ' در ورود به سیستم مشکل دارید؟',
+                  'در ورود به سیستم مشکل دارید؟',
                   textDirection: TextDirection.rtl,
                   style: TextStyle(
+                    wordSpacing: -4,
                     fontWeight: FontWeight.bold,
                     fontSize: 24,
                     color: Colors.white,
                   ),
                 ),
                 const SizedBox(
-                  height: 8,
+                  height: 16,
                 ),
                 const Text(
                   'ما داریم زحمت میکشیم تا این فرایند را برای شما ساده تر کنیم.',
@@ -68,7 +69,7 @@ class _WrongPassState extends State<WrongPass> {
                   ),
                 ),
                 const SizedBox(
-                  height: 64,
+                  height: 72,
                 ),
                 TextButton(
                   onPressed: () {},
@@ -85,7 +86,7 @@ class _WrongPassState extends State<WrongPass> {
                   ),
                   child: const Text(
                     'بازگردانی رمز عبور',
-                    style: TextStyle(fontSize: 18),
+                    style: TextStyle(fontSize: 16),
                   ),
                 ),
                 const SizedBox(
@@ -107,7 +108,7 @@ class _WrongPassState extends State<WrongPass> {
                   ),
                   child: const Text(
                     'پشتیبانی',
-                    style: TextStyle(fontSize: 18),
+                    style: TextStyle(fontSize: 16),
                   ),
                 ),
               ],
