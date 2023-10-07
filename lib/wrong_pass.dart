@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
@@ -86,7 +88,10 @@ class _WrongPassState extends State<WrongPass> {
                   ),
                   child: const Text(
                     'بازگردانی رمز عبور',
-                    style: TextStyle(fontSize: 16),
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
                 const SizedBox(
@@ -108,12 +113,22 @@ class _WrongPassState extends State<WrongPass> {
                   ),
                   child: const Text(
                     'پشتیبانی',
-                    style: TextStyle(fontSize: 16),
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ],
             ),
-          )
+          ),
+          const Spacer(),
+          const Text(
+            'pouya.code',
+            textAlign: TextAlign.center,
+            style:
+                TextStyle(fontWeight: FontWeight.bold, color: Colors.white54),
+          ),
         ],
       ),
     );
