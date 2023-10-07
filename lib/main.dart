@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Login Screen (Pishro mim)',
       theme: ThemeData(
+        fontFamily: 'IranSans',
         // This is the theme of your application.
         //
         // TRY THIS: Try running your application with "flutter run". You'll see
