@@ -8,9 +8,20 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepPurple[900],
-      body: Padding(
+      body: Container(
         padding: const EdgeInsets.all(16.0),
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              Colors.deepPurple.shade900,
+              Colors.deepPurple.shade800,
+              Colors.deepPurple.shade600,
+              Colors.deepPurple.shade500,
+            ],
+          ),
+        ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -41,12 +52,15 @@ class LoginScreen extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.yellow.shade800,
                 foregroundColor: Colors.white,
-                minimumSize: const Size(double.infinity, 68),
-                maximumSize: const Size(double.infinity, 68),
+                minimumSize: const Size(double.infinity, 62),
+                maximumSize: const Size(double.infinity, 62),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12.0),
+                ),
                 padding: const EdgeInsets.all(0),
                 alignment: Alignment.center,
               ),
-              child: Text(
+              child: const Text(
                 'ورود',
                 style: TextStyle(fontSize: 24),
               ),
@@ -80,7 +94,7 @@ class MyTextField extends StatelessWidget {
           borderSide: BorderSide(color: Colors.redAccent.shade700, width: 2),
           borderRadius: BorderRadius.circular(12.0),
         ),
-        labelText: lable,
+        hintText: lable,
         prefixIcon: icon,
       ),
     );
