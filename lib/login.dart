@@ -61,7 +61,7 @@ class LoginScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   CupertinoPageRoute(
-                    builder: (context) => WrongPass(),
+                    builder: (context) => const WrongPass(),
                   ),
                 );
               },
@@ -79,6 +79,23 @@ class LoginScreen extends StatelessWidget {
               child: const Text(
                 'ورود',
                 style: TextStyle(fontSize: 24),
+              ),
+            ),
+            const SizedBox(
+              height: 32,
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  CupertinoPageRoute(
+                    builder: (context) => const WrongPass(),
+                  ),
+                );
+              },
+              child: const Text(
+                'در ورود به سیستم مشکل دارم',
+                style: TextStyle(fontSize: 14, color: Colors.lightBlueAccent),
               ),
             )
           ],
